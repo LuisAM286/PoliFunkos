@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POPs</title>
+    <link rel="stylesheet" href="css/style-ind.css">
+    <link rel="shortcut icon" href="img/pop.png" type="image/x-icon">
+</head>
+<body>
+
+
+    <header>
+        <div class="anunc">
+            <p>No te pierdas nuestras ultimas <a href="#tienda">ofertas</a>.</p>
+        </div>
+        <div class="hea">
+            <a href="index.html"><h2>FunkosPOLI</h2></a>
+            <nav>
+                <a href="#tienda">TIENDA</a>
+                <a href="blog.html">BLOG</a>
+                <a href="acerca.html">ACERCA DE</a>
+            </nav>
+            <nav class="carus">
+                <button onclick="openModal()"><img src="img/person.png" alt=""></button>
+                
+                <button onclick="toggleCart()"><img src="img/carrito.png" alt=""></button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        
+
+        <section class="carrito hidden" id="carrito">
+            <h3>Tu carrito</h3>
+            <ul id="carro-prod"></ul>
+            <div class="carr-total">
+                <p>Total: <span id="carr-total">$0.00 mxn</span></p>
+            </div>
+            <button onclick="limpCart()">Vaciar carrito</button>
+
+        </section>
+        
+        <section class="modal" id="modal">
+            <div class="cont-atras">
+
+                <div class="atras-log">
+                    <h3>¿Ya tienes cuenta?</h3>
+                    <p>inicia sesión</p>
+                    <button id="btn-log">Inicia Sesión</button>
+                </div>
+
+                <div class="atras-reg">
+                    <h3>¿Aun no tienes cuenta?</h3>
+                    <p>Registrate para acceder a mas ofertas</p>
+                    <button id="btn-reg" >Registrarse</button>
+                </div>
+
+            </div>
+
+            <div class="cont-logreg">
+                <form action="" class="formulario-login">
+                    <h2>Iniciar sesión</h2>
+                    <input type="email" placeholder="Correo">
+                <input type="password" placeholder="Contraseña">
+                <button>Iniciar Sesión</button>
+                </form>
+
+                <form action="" class="formulario-reg">
+                    <h2>Registrarse</h2>
+                    <input type="text" placeholder="Usuario">
+                    <input type="email" placeholder="Correo">
+                    <input type="password" placeholder="Contraseña">
+                    <button>Registrarse</button>
+                </form>
+            </div>
+        </section>
+    
+
+
+        <div class="cont1">
+            <div class="img1">
+                <h2>ARMATE DE UNA GRAN COLECCIÓN DE FIGURAS.</h2>
+            </div>
+            <div class="cont1-inf">
+                <div class="contNov">
+                    <h4>Mantente informado</h4>
+                    <p>Registrate y recibe correos acerca de novedades y ofertas en nuestra tienda</p>
+                    <button onclick="openModal()"><img src="img/flechab.png" alt=""></button>
+                </div>
+
+                <div class="contNov2">
+                    <h4>Dejanos tu opinión</h4>
+                    <p>Nos importa saber lo que piensas para poder brindarte un mejor servicio.</p>
+                    <a href=""><img src="img/flechab.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        
+        <section class="cont2">
+            <div class="cont2inf">
+                <h2>ARMA COLECCIONES INMENSAS</h2>
+                <p>Este creador de contenido nos muestra en su video su gran colección y variedad de funkos durante poco mas de 1 hora. Con nuestra variedad podrias llegar a armar una colección como esta.</p>
+                
+                <a href="#tienda">TIENDA</a>
+            </div>
+            <div class="cont2V">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/fZXw3Bc1QMc?si=UJx6Hq14aBaTR6cl" title="Coleccion de 1000 funkos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section class="cont3" id="tienda">
+            <h1>TIENDA</h1>
+            <div class="productos">
+                <div class="cardprod">
+                    <img src="img/dpool.png" alt="">
+                    <p>Marvel</p>
+                    <h3>DogPool</h3>
+                    <p class="precio">$173 mxn</p>
+                    <p class="descuento">-30% desc</p>
+                    <button>Agregar al carro</button>
+                </div>
+
+                <div class="cardprod">
+                    <img src="img/spiderm.png" alt="">
+                    <p>Marvel</p>
+                    <h3>Spider-Man</h3>
+                    <p class="precio">$220 mxn</p>
+                    <p class="descuento">-10% desc</p>
+                    <button>Agregar al carro</button>
+                </div>
+
+                <div class="cardprod">
+                    <img src="img/falcon.png" alt="">
+                    <p>Marvel</p>
+                    <h3>Falcon</h3>
+                    <p class="precio">$60 mxn</p>
+                    <p class="descuento">-70% desc</p>
+                    <button>Agregar al carro</button>
+                </div>
+
+                <div class="cardprod">
+                    <img src="img/tedla.png" alt="">
+                    <p>TED LASSO</p>
+                    <h3>Ted Lasso</h3>
+                    <p class="precio">$267 mxn</p>
+                    <p class="descuento">-10% desc</p>
+                    <button>Agregar al carro</button>
+                </div>
+
+                <div class="cardprod">
+                    <img src="img/MichaelJ.png" alt="">
+                    <p>THE OFFICE</p>
+                    <h3>Michael Jesus</h3>
+                    <p class="precio">$60 mxn</p>
+                    <p class="descuento">-70% desc</p>
+                    <button>Agregar al carro</button>
+                </div>
+
+                <div class="cardprod">
+                    <img src="img/lydia.png" alt="">
+                    <p>BETLEEJUICE</p>
+                    <h3>Lydia deetz</h3>
+                    <p class="precio">$200 mxn</p>
+                    <p class="descuento">-10% desc</p>
+                    <button>Agregar al carro</button>
+                </div>
+
+                <div class="cardprod">
+                    <img src="img/scorpion.png" alt="">
+                    <p>MORTAL KOMBAT</p>
+                    <h3>Scorpion</h3>
+                    <p class="precio">$200 mxn</p>
+                    <p class="descuento">-10% desc</p>
+                    <button>Agregar al carro</button>
+                </div>
+
+                <div class="cardprod">
+                    <img src="img/harryp.png" alt="">
+                    <p>HARRY POTTER</p>
+                    <h3>Harry</h3>
+                    <p class="precio">$173 mxn</p>
+                    <p class="descuento">-30% desc</p>
+                    <button>Agregar al carro</button>
+                </div>
+
+                <div class="cardprod">
+                    <img src="img/zamas.png" alt="">
+                    <p>DRAGON BALL</p>
+                    <h3>Zamasu</h3>
+                    <p class="precio">$82 mxn</p>
+                    <p class="descuento">-70% desc</p>
+                    <button>Agregar al carro</button>
+                </div>
+
+                <div class="cardprod">
+                    <img src="img/goku.png" alt="">
+                    <p>DRAGON BALL</p>
+                    <h3>Goku GT</h3>
+                    <p class="precio">$123 mxn</p>
+                    <p class="descuento">-50% desc</p>
+                    <button>Agregar al carro</button>
+                </div>
+
+                <div class="cardprod">
+                    <img src="img/cenation.jpeg" alt="">
+                    <p>WWE</p>
+                    <h3>John Cena</h3>
+                    <p class="precio">$173 mxn</p>
+                    <p class="descuento">-10% desc</p>
+                    <button>Agregar al carro</button>
+                </div>
+
+                <div class="cardprod">
+                    <img src="img/batman.png" alt="">
+                    <p>DC COMICS</p>
+                    <h3>Batman</h3>
+                    <p class="precio">$123 mxn</p>
+                    <p class="descuento">-50% desc</p>
+                    <button>Agregar al carro</button>
+                </div>
+            </div>
+        </section>
+        
+        <section class="contcorr">
+            <h2>RECIBE OFERTAS EN FUNKOSPOLI</h2>
+            <p>Ingresa tu correo para que recibas notificaciones acerca de nuevas ofertas en nuestra pagina.</p>
+            <form action="">
+                <input type="email" placeholder="Dirección de correo">
+
+                <button type="submit">Enviar</button>
+
+            </form>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <img src="img/pop.png" alt="Funkos Poli Logo">
+                <p>Oficina principal: Escuela Politécnica, Guadalajara, Jalisco, México</p>
+                <p>Teléfono: 1234 567 8910</p>
+                <p>Email: contacto@funkospoli.com</p>
+            </div>
+    
+            <div class="footer-right">
+                <div class="footer-columns">
+                    <div class="footer-column">
+                        <h4>Acerca de</h4>
+                        <ul>
+                            <li><a href="#">Nuestra historia</a></li>
+                            <li><a href="#">Sustentabilidad</a></li>
+                            <li><a href="#">Políticas</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Ayuda</h4>
+                        <ul>
+                            <li><a href="#">Soporte</a></li>
+                            <li><a href="#">Envíos</a></li>
+                            <li><a href="#">Preguntas frecuentes</a></li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="footer-social">
+                    <h4>Redes Sociales</h4>
+                    <div class="social-icons">
+                        <a href="#"><img src="img/facebook.png" alt="Facebook"></a>
+                        <a href="#"><img src="img/social.png" alt="Instagram"></a>
+                        <a href="#"><img src="img/equis.png" alt="Twitter"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2024 Funkos Poli. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/index.js" defer></script>
+</body>
+</html>
